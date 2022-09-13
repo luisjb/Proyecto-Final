@@ -25,12 +25,12 @@
 .conteiner {
     display: grid; 
     grid-auto-columns: 1fr; 
-    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-columns: 1fr; 
     grid-template-rows: 0.5fr 2fr 0.5fr;  
     grid-template-areas: 
-    "navegador navegador navegador"
-    "main main main"
-    "footer footer footer"
+    "navegador"
+    "main"
+    "footer"
 }
 main{
     grid-area: main;
@@ -160,6 +160,107 @@ footer{
 .boton{
     margin: 10px;
 }
+/*Estilo de equipamiento.html*/
+.equipos {
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr 1fr 1fr 1fr; 
+    grid-template-areas: 
+    "equip1 equip2"
+    "equip3 equip4"
+    "equip5 equip6"
+    "equip7 equip8"; 
+}
+.equipos img:hover{
+    opacity: 1;
+    border: 2px solid white;
+    scale: 1.15;
+}
+.equip1 { 
+    grid-area: equip1;
+    margin: 10px auto; 
+    text-align: center;  
+}
+.equip1 img{
+    opacity: 0.75;
+    box-shadow: 7px 5px 5px black;
+    border-radius: 15px;
+}
+.equip2 { 
+    grid-area: equip2; 
+    margin: 10px auto; 
+    text-align: center;
+}
+.equip2 img{
+    opacity: 0.75; 
+    box-shadow: 7px 5px 5px black;
+    border-radius: 15px;
+    
+}
+.equip3 { 
+    grid-area: equip3; 
+    margin: 10px auto; 
+    text-align: center;
+}
+.equip3 img{
+    opacity: 0.75; 
+    box-shadow: 7px 5px 5px black;
+    border-radius: 15px;
+
+}
+.equip4 { 
+    grid-area: equip4; 
+    margin: 10px auto; 
+    text-align: center;
+}
+.equip4 img{
+    opacity: 0.75;
+    box-shadow: 7px 5px 5px black;
+    border-radius: 15px; 
+}
+.equip5 { 
+    grid-area: equip5; 
+    margin: 10px auto; 
+    text-align: center;
+}
+.equip5 img{
+    opacity: 0.75;
+    box-shadow: 7px 5px 5px black;
+    border-radius: 15px; 
+}
+.equip6 { 
+    grid-area: equip6; 
+    margin: 10px auto; 
+    text-align: center;
+}
+.equip6 img{
+    opacity: 0.75;
+    box-shadow: 7px 5px 5px black;
+    border-radius: 15px; 
+}
+.equip7 { 
+    grid-area: equip7; 
+    margin: 10px auto; 
+    text-align: center;
+}
+.equip7 img{
+    opacity: 0.75;
+    box-shadow: 7px 5px 5px black;
+    border-radius: 15px; 
+}
+.equip8 { 
+    grid-area: equip8; 
+    margin: 10px auto; 
+    text-align: center;
+}
+.equip8 img{
+    opacity: 0.75;
+    box-shadow: 7px 5px 5px black;
+    border-radius: 15px; 
+}
+.titulo3{
+    color: #e5e5e5cc;
+}
 /*Para el slider de imagenes*/
 .conteiner-carrusel{
     width: 100%;
@@ -225,4 +326,22 @@ footer{
         display: flex;
         flex-direction: column;
     }
+    .equipos {
+        display: grid; 
+        grid-template-columns: 1fr; 
+        grid-template-rows: repeat(8, 1fr); 
+        grid-template-areas: 
+        "equip1" 
+        "equip2"
+        "equip3" 
+        "equip4"
+        "equip5" 
+        "equip6"
+        "equip7" 
+        "equip8"; 
+    }
+    .formulario{
+        width: 320px;    
+    }
+    
 }

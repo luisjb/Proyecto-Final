@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Michroma&family=Source+Serif+Pro:ital@1&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Equipamientos</title>
 </head>
 <body>
@@ -27,9 +28,43 @@
             </nav>
         </header>
         <Main>
-            <h1 class="titulo1">
+            <h2 class="titulo1">
                 Equipamiento
-            </h1>
+            </h2>
+            <div class="equipos">
+                <div class="equip1" data-aos="fade-up-right">
+                    <img src="../assets/alphaDelantera.jpg" alt="alphaDelantera">
+                    <h3 class="titulo3">Sony Alpha 7III</h3>
+                </div>
+                <div class="equip2" data-aos="fade-up-left">
+                    <img src="../assets/alphaTrasera.jpg" alt="alphaTrasera">
+                    <h3 class="titulo3">Sony Alpha 7III</h3>
+                </div>
+                <div class="equip3" data-aos="fade-up-right">
+                    <img src="../assets/lente24.jpg" alt="lente24">
+                    <h3 class="titulo3">Lente 24mm</h3>
+                </div>
+                <div class="equip4" data-aos="fade-up-left">
+                    <img src="../assets/lente35.jpg" alt="lente35">
+                    <h3 class="titulo3">Lente 35mm</h3>
+                </div>
+                <div class="equip5" data-aos="fade-up-right">
+                    <img src="../assets/lente400.jpg" alt="lente400">
+                    <h3 class="titulo3">Lente 400mm</h3>
+                </div>
+                <div class="equip6" data-aos="fade-up-left">
+                    <img src="../assets/lente50.jpg" alt="lente50">
+                    <h3 class="titulo3">Lente 50mm</h3>
+                </div>
+                <div class="equip7" data-aos="fade-up-right">
+                    <img src="../assets/gimbal.jpg" alt="gimbal">
+                    <h3 class="titulo3">Gimbal</h3>
+                </div>
+                <div class="equip8" data-aos="fade-up-left">
+                    <img src="../assets/drone.jpg" alt="drone">
+                    <h3 class="titulo3">Mavic Air 2</h3>
+                </div>
+            </div>
         </Main>
         <footer>
             <div class="enlaces">
@@ -49,5 +84,14 @@
             </h4>
         </footer>
     </div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 120,
+            delay: 300,
+            duration: 600,
+            easing: 'ease'
+        });
+    </script>
 </body>
 </html>

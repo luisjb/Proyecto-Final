@@ -26,7 +26,7 @@
     display: grid; 
     grid-auto-columns: 1fr; 
     grid-template-columns: 1fr; 
-    grid-template-rows: 0.5fr 2fr 0.5fr;  
+    grid-template-rows: 0.35fr 2fr 0.5fr;  
     grid-template-areas: 
     "navegador"
     "main"
@@ -180,6 +180,7 @@ footer{
     grid-area: equip1;
     margin: 10px auto; 
     text-align: center;  
+    padding: 10px;
 }
 .equip1 img{
     opacity: 0.75;
@@ -190,6 +191,7 @@ footer{
     grid-area: equip2; 
     margin: 10px auto; 
     text-align: center;
+    padding: 10px;
 }
 .equip2 img{
     opacity: 0.75; 
@@ -201,6 +203,7 @@ footer{
     grid-area: equip3; 
     margin: 10px auto; 
     text-align: center;
+    padding: 10px;
 }
 .equip3 img{
     opacity: 0.75; 
@@ -212,6 +215,7 @@ footer{
     grid-area: equip4; 
     margin: 10px auto; 
     text-align: center;
+    padding: 10px;
 }
 .equip4 img{
     opacity: 0.75;
@@ -222,6 +226,7 @@ footer{
     grid-area: equip5; 
     margin: 10px auto; 
     text-align: center;
+    padding: 10px;
 }
 .equip5 img{
     opacity: 0.75;
@@ -232,6 +237,7 @@ footer{
     grid-area: equip6; 
     margin: 10px auto; 
     text-align: center;
+    padding: 10px;
 }
 .equip6 img{
     opacity: 0.75;
@@ -242,6 +248,7 @@ footer{
     grid-area: equip7; 
     margin: 10px auto; 
     text-align: center;
+    padding: 10px;
 }
 .equip7 img{
     opacity: 0.75;
@@ -252,6 +259,7 @@ footer{
     grid-area: equip8; 
     margin: 10px auto; 
     text-align: center;
+    padding: 10px;
 }
 .equip8 img{
     opacity: 0.75;

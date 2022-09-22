@@ -3,24 +3,14 @@
     padding: 0;
     box-sizing: border-box;
 }
-.titulo{
-    /*text-align: center;*/
-    font-family: 'Michroma', sans-serif;
-    color: #e5e5e583;
-    grid-area: titulo;
-    text-align: center;
-}
-.titulo1{
-    text-align: center;
-    font-family: 'Michroma', sans-serif;
-    color: #e5e5e5c0;
-    padding: 10px;
-}
-.logo{
-    width: 75px;
-    padding: 5px;
-    box-sizing: content-box;
-    grid-area: logo;
+body{
+    background: hsla(221, 75%, 24%, 1);
+    background: radial-gradient(circle, hsla(221, 75%, 24%, 1) 0%, hsla(221, 51%, 16%, 1) 77%, hsla(221, 75%, 24%, 1) 100%);
+    background: -moz-radial-gradient(circle, hsla(221, 75%, 24%, 1) 0%, hsla(221, 51%, 16%, 1) 77%, hsla(221, 75%, 24%, 1) 100%);
+    background: -webkit-radial-gradient(circle, hsla(221, 75%, 24%, 1) 0%, hsla(221, 51%, 16%, 1) 77%, hsla(221, 75%, 24%, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#0F2C6A", endColorstr="#14213D", GradientType=1 );
+    font-family: 'Source Serif Pro', serif;
+    font-weight: bold;
 }
 .conteiner {
     display: grid; 
@@ -34,24 +24,6 @@
 }
 main{
     grid-area: main;
-}
-
-/*Navegador entre paginas*/
-.navegador{
-    grid-area: navegador;
-    padding: 1px;
-    justify-content: space-between;
-    align-items: center;
-    display: grid; 
-    grid-template-columns: 1fr 0.35fr 1fr; 
-    grid-template-areas: "logo titulo listaNavegador";
-}
-.listaNavegador {
-    text-align: right;
-    grid-area: listaNavegador;
-}
-.listaNavegador ul li{
-    display: inline;
 }
 .listaNavegador ul li a{
     text-decoration: none;
@@ -67,20 +39,30 @@ main{
     color: #fca311;
     background-color: #e5e5e583;
 }
-body{
-    background: hsla(221, 75%, 24%, 1);
-    background: radial-gradient(circle, hsla(221, 75%, 24%, 1) 0%, hsla(221, 51%, 16%, 1) 77%, hsla(221, 75%, 24%, 1) 100%);
-    background: -moz-radial-gradient(circle, hsla(221, 75%, 24%, 1) 0%, hsla(221, 51%, 16%, 1) 77%, hsla(221, 75%, 24%, 1) 100%);
-    background: -webkit-radial-gradient(circle, hsla(221, 75%, 24%, 1) 0%, hsla(221, 51%, 16%, 1) 77%, hsla(221, 75%, 24%, 1) 100%);
-    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#0F2C6A", endColorstr="#14213D", GradientType=1 );
-    font-family: 'Source Serif Pro', serif;
-    font-weight: bold;
+.titulo{
+    /*text-align: center;*/
+    font-family: 'Michroma', sans-serif;
+    color: #e5e5e583;
+    grid-area: titulo;
+    text-align: center;
 }
-/*texto de presentacion*/
+.titulo1{
+    text-align: center;
+    font-family: 'Michroma', sans-serif;
+    color: #e5e5e5c0;
+    padding: 10px;
+}
+.titulo3{
+    color: #e5e5e5cc;
+}
 .presentacion{
     padding: 10px;
     color: #e5e5e583;
     margin-bottom: 30px;
+}
+.paddingTB{
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 footer{
     grid-area: footer;
@@ -92,7 +74,6 @@ footer{
     background: linear-gradient(to right,  #090e21 1%,#000000 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#090e21', endColorstr='#000000',GradientType=1 ); /* IE6-9 */
 }
-/*Enlaces de redes*/
 .enlaces{
     padding-top: 25px;
     text-align: center;
@@ -110,7 +91,7 @@ footer{
     color: #e5e5e5cc;
     padding: 10px;
     transition: background-color .8s;
-    background-image: url(./assets/topography.svg);
+    background-image: url(../assets/topography.svg);
     border-radius: 10px;
 }
 .enlaces ul li a:hover{
@@ -133,34 +114,17 @@ footer{
     position: relative;
     bottom: 5px;
 }
-/*Formulario de contacto*/
-.formulario{
-    background-color: #e5e5e5cc;
-    width: 400px;
-    height: 250px;
-    padding: 5px;
-    line-height: 25px;
-    margin: auto;
+.paddingT{
+    padding-top: 50px;
 }
-.formulario h3{
-    margin: 10px;
+.centrar{
     text-align: center;
+    margin: 0;
 }
-.description{
-    height: 30px;
+.paddingLR{
+    padding-left: 10px; 
+    padding-right: 10px;
 }
-
-.formulario input{
-    float: right;
-    margin-left: 5px;
-}
-.terms{
-    margin-top: 30px;
-}
-.boton{
-    margin: 10px;
-}
-/*Estilo de equipamiento.html*/
 .equipos {
     display: grid; 
     grid-template-columns: 1fr 1fr; 
@@ -266,10 +230,6 @@ footer{
     box-shadow: 7px 5px 5px black;
     border-radius: 15px; 
 }
-.titulo3{
-    color: #e5e5e5cc;
-}
-/*Para el slider de imagenes*/
 .conteiner-carrusel{
     width: 100%;
     margin: auto;
@@ -300,37 +260,13 @@ footer{
     75% {margin-left: -300%;}    
     100% {margin-left: -300%;}  
 }
-/*Parte responsive*/
-@media screen and (max-width:800px) {
-    .navegador{
-        grid-area: navegador;
-        padding: 1px;
-        justify-content: space-between;
-        align-items: center;
-        display: grid; 
-        grid-template-columns: 1fr; 
-        grid-template-rows: 1fr 0.5fr 1fr; 
-        grid-template-areas: 
-        "logo"
-        "titulo"
-        "listaNavegador";
+@media only screen and (min-width: 1024px){
+    .navbar-expand-lg .navbar-collapse{
+        justify-content: flex-end;
     }
-    .enlaceLogo{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .listaNavegador{
-        display: flex;
-        justify-content: center;
-        text-align: center;
-    }
-    .listaNavegador ul li a{
-        padding: 15px;
-        font-size: medium;
-        line-height: 35px;
-    }
-    .enlaces ul{
+}
+@media only screen and (max-width: 767px){
+	.enlaces ul{
         display: flex;
         flex-direction: column;
     }
@@ -348,8 +284,4 @@ footer{
         "equip7" 
         "equip8"; 
     }
-    .formulario{
-        width: 320px;    
-    }
-    
 }

@@ -1,0 +1,58 @@
+footer{
+    grid-area: footer;
+    color: white;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#090e21+1,000000+100 */
+    background: #090e21; /* Old browsers */
+    background: -moz-linear-gradient(left,  #090e21 1%, #000000 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left,  #090e21 1%,#000000 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right,  #090e21 1%,#000000 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#090e21', endColorstr='#000000',GradientType=1 ); /* IE6-9 */
+}
+.enlaces{
+    padding-top: 25px;
+    text-align: center;
+    ul{
+        display: flex;
+        justify-content: center;
+        li{
+            padding: 10px;
+            list-style: none;
+            a{
+                text-decoration: none;
+                color: #e5e5e5cc;
+                padding: 10px;
+                transition: background-color .8s;
+                background-image: url(../assets/topography.svg);
+                border-radius: 10px;
+                &:hover{
+                    color: #ce8209;
+                    background-color: #e5e5e583;
+                }
+            }
+        }
+    }
+}
+/*Flecha para subir*/
+.flecha{
+    width: 55px;
+    box-sizing: content-box;
+    position: fixed;
+    bottom: 0;
+    padding: 15px;
+    filter: brightness(100);
+    -webkit-filter: brightness(100);
+}
+.copyright{
+    text-align: center;
+    margin-top: 75px;
+    position: relative;
+    bottom: 5px;
+}
+.paddingT{
+    padding-top: 50px;
+}
+
+.paddingLR{
+    padding-left: 10px; 
+    padding-right: 10px;
+}

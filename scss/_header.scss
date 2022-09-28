@@ -1,0 +1,27 @@
+.titulo{
+    /*text-align: center;*/
+    font-family: 'Michroma', sans-serif;
+    color: $textColor;
+    grid-area: titulo;
+    text-align: center;
+}
+.listaNavegador {
+    ul{
+        li{
+            a{
+                text-decoration: none;
+                color: $textColor;
+                list-style: none;
+                padding: 10px;
+                transition: background-color .8s;
+                font-size: large;
+                border-radius: 8px;
+                
+                &:hover{
+                    color: $textColorHover;
+                    background-color: #e5e5e583;
+                }
+            }
+        } 
+    }
+}

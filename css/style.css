@@ -1,287 +1,351 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-body{
-    background: hsla(221, 75%, 24%, 1);
-    background: radial-gradient(circle, hsla(221, 75%, 24%, 1) 0%, hsla(221, 51%, 16%, 1) 77%, hsla(221, 75%, 24%, 1) 100%);
-    background: -moz-radial-gradient(circle, hsla(221, 75%, 24%, 1) 0%, hsla(221, 51%, 16%, 1) 77%, hsla(221, 75%, 24%, 1) 100%);
-    background: -webkit-radial-gradient(circle, hsla(221, 75%, 24%, 1) 0%, hsla(221, 51%, 16%, 1) 77%, hsla(221, 75%, 24%, 1) 100%);
-    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#0F2C6A", endColorstr="#14213D", GradientType=1 );
-    font-family: 'Source Serif Pro', serif;
-    font-weight: bold;
-}
-.conteiner {
-    display: grid; 
-    grid-auto-columns: 1fr; 
-    grid-template-columns: 1fr; 
-    grid-template-rows: 0.35fr 2fr 0.5fr;  
-    grid-template-areas: 
-    "navegador"
-    "main"
-    "footer"
-}
-main{
-    grid-area: main;
-}
-.listaNavegador ul li a{
-    text-decoration: none;
-    color: #e5e5e583;
-    list-style: none;
-    padding: 10px;
-    transition: background-color .8s;
-    font-size: large;
-    border-radius: 8px;
-}
-/*Accion cuando paso el mouse por encima*/
-.listaNavegador ul li a:hover{
-    color: #fca311;
-    background-color: #e5e5e583;
-}
-.titulo{
-    /*text-align: center;*/
-    font-family: 'Michroma', sans-serif;
-    color: #e5e5e583;
-    grid-area: titulo;
-    text-align: center;
-}
-.titulo1{
-    text-align: center;
-    font-family: 'Michroma', sans-serif;
-    color: #e5e5e5c0;
-    padding: 10px;
-}
-.titulo3{
-    color: #e5e5e5cc;
-}
-.presentacion{
-    padding: 10px;
-    color: #e5e5e583;
-    margin-bottom: 30px;
-}
-.paddingTB{
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-footer{
-    grid-area: footer;
-    color: white;
-    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#090e21+1,000000+100 */
-    background: #090e21; /* Old browsers */
-    background: -moz-linear-gradient(left,  #090e21 1%, #000000 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(left,  #090e21 1%,#000000 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to right,  #090e21 1%,#000000 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#090e21', endColorstr='#000000',GradientType=1 ); /* IE6-9 */
-}
-.enlaces{
-    padding-top: 25px;
-    text-align: center;
-}
-.enlaces ul{
-    display: flex;
-    justify-content: center;
-}
-.enlaces ul li{
-    padding: 10px;
-    list-style: none;
-}
-.enlaces ul li a{
-    text-decoration: none;
-    color: #e5e5e5cc;
-    padding: 10px;
-    transition: background-color .8s;
-    background-image: url(../assets/topography.svg);
-    border-radius: 10px;
-}
-.enlaces ul li a:hover{
-    color: #ce8209;
-    background-color: #e5e5e583;
-}
-/*Flecha para subir*/
-.flecha{
-    width: 55px;
-    box-sizing: content-box;
-    position: fixed;
-    bottom: 0;
-    padding: 15px;
-    filter: brightness(100);
-    -webkit-filter: brightness(100);
-}
-.copyright{
-    text-align: center;
-    margin-top: 75px;
-    position: relative;
-    bottom: 5px;
-}
-.paddingT{
-    padding-top: 50px;
-}
-.centrar{
-    text-align: center;
-    margin: 0;
-}
-.paddingLR{
-    padding-left: 10px; 
-    padding-right: 10px;
-}
-.equipos {
-    display: grid; 
-    grid-template-columns: 1fr 1fr; 
-    grid-template-rows: 1fr 1fr 1fr 1fr; 
-    grid-template-areas: 
-    "equip1 equip2"
-    "equip3 equip4"
-    "equip5 equip6"
-    "equip7 equip8"; 
-}
-.equipos img:hover{
-    opacity: 1;
-    border: 2px solid white;
-    scale: 1.15;
-}
-.equip1 { 
-    grid-area: equip1;
-    margin: 10px auto; 
-    text-align: center;  
-    padding: 10px;
-}
-.equip1 img{
-    opacity: 0.75;
-    box-shadow: 7px 5px 5px black;
-    border-radius: 15px;
-}
-.equip2 { 
-    grid-area: equip2; 
-    margin: 10px auto; 
-    text-align: center;
-    padding: 10px;
-}
-.equip2 img{
-    opacity: 0.75; 
-    box-shadow: 7px 5px 5px black;
-    border-radius: 15px;
-    
-}
-.equip3 { 
-    grid-area: equip3; 
-    margin: 10px auto; 
-    text-align: center;
-    padding: 10px;
-}
-.equip3 img{
-    opacity: 0.75; 
-    box-shadow: 7px 5px 5px black;
-    border-radius: 15px;
 
+body {
+  background: hsl(221deg, 75%, 24%);
+  background: radial-gradient(circle, hsl(221deg, 75%, 24%) 0%, hsl(221deg, 51%, 16%) 77%, hsl(221deg, 75%, 24%) 100%);
+  background: -webkit-radial-gradient(circle, hsl(221deg, 75%, 24%) 0%, hsl(221deg, 51%, 16%) 77%, hsl(221deg, 75%, 24%) 100%);
+  font-family: "Source Serif Pro", serif;
+  font-weight: bold;
 }
-.equip4 { 
-    grid-area: equip4; 
-    margin: 10px auto; 
-    text-align: center;
-    padding: 10px;
+
+.titulo {
+  /*text-align: center;*/
+  font-family: "Michroma", sans-serif;
+  color: rgba(229, 229, 229, 0.5137254902);
+  grid-area: titulo;
+  text-align: center;
 }
-.equip4 img{
-    opacity: 0.75;
-    box-shadow: 7px 5px 5px black;
-    border-radius: 15px; 
+
+.listaNavegador ul li a {
+  text-decoration: none;
+  color: rgba(229, 229, 229, 0.5137254902);
+  list-style: none;
+  padding: 10px;
+  transition: background-color 0.8s;
+  font-size: large;
+  border-radius: 8px;
 }
-.equip5 { 
-    grid-area: equip5; 
-    margin: 10px auto; 
-    text-align: center;
-    padding: 10px;
+.listaNavegador ul li a:hover {
+  color: #fca311;
+  background-color: rgba(229, 229, 229, 0.5137254902);
 }
-.equip5 img{
-    opacity: 0.75;
-    box-shadow: 7px 5px 5px black;
-    border-radius: 15px; 
+
+main {
+  grid-area: main;
 }
-.equip6 { 
-    grid-area: equip6; 
-    margin: 10px auto; 
-    text-align: center;
-    padding: 10px;
+
+.titulo1 {
+  text-align: center;
+  font-family: "Michroma", sans-serif;
+  color: rgba(229, 229, 229, 0.5137254902);
+  padding: 10px;
 }
-.equip6 img{
-    opacity: 0.75;
-    box-shadow: 7px 5px 5px black;
-    border-radius: 15px; 
+
+.titulo3 {
+  color: rgba(229, 229, 229, 0.5137254902);
 }
-.equip7 { 
-    grid-area: equip7; 
-    margin: 10px auto; 
-    text-align: center;
-    padding: 10px;
+
+.presentacion {
+  padding: 10px;
+  color: rgba(229, 229, 229, 0.5137254902);
+  margin-bottom: 30px;
 }
-.equip7 img{
-    opacity: 0.75;
-    box-shadow: 7px 5px 5px black;
-    border-radius: 15px; 
+
+.paddingTB {
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
-.equip8 { 
-    grid-area: equip8; 
-    margin: 10px auto; 
-    text-align: center;
-    padding: 10px;
+
+.flecha {
+  width: 55px;
+  box-sizing: content-box;
+  position: fixed;
+  bottom: 0;
+  padding: 15px;
+  filter: brightness(100);
+  -webkit-filter: brightness(100);
 }
-.equip8 img{
-    opacity: 0.75;
-    box-shadow: 7px 5px 5px black;
-    border-radius: 15px; 
+
+.centrar {
+  text-align: center;
+  margin: 0;
 }
-.conteiner-carrusel{
-    width: 100%;
-    margin: auto;
-    overflow: hidden;
+
+.paddingLR {
+  padding-left: 10px;
+  padding-right: 10px;
 }
-.conteiner-carrusel ul{
-    display: flex;
-    width: 400%;
-    padding: 0;
-    animation: movimiento 16s infinite alternate;
-    animation-timing-function: ease-in;
-    -webkit-animation: movimiento 16s infinite alternate;
+
+.equipos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-areas: "equip1 equip2" "equip3 equip4" "equip5 equip6" "equip7 equip8";
 }
-.conteiner-carrusel li{
-    width: 100%;
-    list-style: none;
+.equipos img:hover {
+  opacity: 1;
+  border: 2px solid white;
+  scale: 1.15;
 }
-.conteiner-carrusel img{
-    width: 100%;
+
+.equip1 {
+  grid-area: equip1;
+  margin: 10px auto;
+  text-align: center;
+  padding: 10px;
 }
+.equip1 img {
+  opacity: 0.75;
+  box-shadow: 7px 5px 5px black;
+  border-radius: 15px;
+}
+
+.equip2 {
+  grid-area: equip2;
+  margin: 10px auto;
+  text-align: center;
+  padding: 10px;
+}
+.equip2 img {
+  opacity: 0.75;
+  box-shadow: 7px 5px 5px black;
+  border-radius: 15px;
+}
+
+.equip3 {
+  grid-area: equip3;
+  margin: 10px auto;
+  text-align: center;
+  padding: 10px;
+}
+.equip3 img {
+  opacity: 0.75;
+  box-shadow: 7px 5px 5px black;
+  border-radius: 15px;
+}
+
+.equip4 {
+  grid-area: equip4;
+  margin: 10px auto;
+  text-align: center;
+  padding: 10px;
+}
+.equip4 img {
+  opacity: 0.75;
+  box-shadow: 7px 5px 5px black;
+  border-radius: 15px;
+}
+
+.equip5 {
+  grid-area: equip5;
+  margin: 10px auto;
+  text-align: center;
+  padding: 10px;
+}
+.equip5 img {
+  opacity: 0.75;
+  box-shadow: 7px 5px 5px black;
+  border-radius: 15px;
+}
+
+.equip6 {
+  grid-area: equip6;
+  margin: 10px auto;
+  text-align: center;
+  padding: 10px;
+}
+.equip6 img {
+  opacity: 0.75;
+  box-shadow: 7px 5px 5px black;
+  border-radius: 15px;
+}
+
+.equip7 {
+  grid-area: equip7;
+  margin: 10px auto;
+  text-align: center;
+  padding: 10px;
+}
+.equip7 img {
+  opacity: 0.75;
+  box-shadow: 7px 5px 5px black;
+  border-radius: 15px;
+}
+
+.equip8 {
+  grid-area: equip8;
+  margin: 10px auto;
+  text-align: center;
+  padding: 10px;
+}
+.equip8 img {
+  opacity: 0.75;
+  box-shadow: 7px 5px 5px black;
+  border-radius: 15px;
+}
+
+.conteiner-carrusel {
+  width: 100%;
+  margin: auto;
+  overflow: hidden;
+}
+.conteiner-carrusel ul {
+  display: flex;
+  width: 400%;
+  padding: 0;
+  animation: movimiento 16s infinite alternate;
+  -webkit-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
+  -webkit-animation: movimiento 16s infinite alternate;
+}
+.conteiner-carrusel ul li {
+  width: 100%;
+  list-style: none;
+}
+.conteiner-carrusel ul li img {
+  width: 100%;
+}
+
+@-webkit-keyframes movimiento {
+  0% {
+    margin-left: 0;
+  }
+  20% {
+    margin-left: 0;
+  }
+  25% {
+    margin-left: -100%;
+  }
+  45% {
+    margin-left: -100%;
+  }
+  50% {
+    margin-left: -200%;
+  }
+  70% {
+    margin-left: -200%;
+  }
+  75% {
+    margin-left: -300%;
+  }
+  100% {
+    margin-left: -300%;
+  }
+}
+
 @keyframes movimiento {
-    0% {margin-left: 0;}
-    20% {margin-left: 0;}  
-    25% {margin-left: -100%;} 
-    45% {margin-left: -100%;}  
-    50% {margin-left: -200%;}  
-    70% {margin-left: -200%;} 
-    75% {margin-left: -300%;}    
-    100% {margin-left: -300%;}  
+  0% {
+    margin-left: 0;
+  }
+  20% {
+    margin-left: 0;
+  }
+  25% {
+    margin-left: -100%;
+  }
+  45% {
+    margin-left: -100%;
+  }
+  50% {
+    margin-left: -200%;
+  }
+  70% {
+    margin-left: -200%;
+  }
+  75% {
+    margin-left: -300%;
+  }
+  100% {
+    margin-left: -300%;
+  }
 }
-@media only screen and (min-width: 1024px){
-    .navbar-expand-lg .navbar-collapse{
-        justify-content: flex-end;
-    }
+footer {
+  grid-area: footer;
+  color: white;
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#090e21+1,000000+100 */
+  background: #090e21; /* Old browsers */ /* FF3.6-15 */ /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, #090e21 1%, #000000 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#090e21", endColorstr="#000000",GradientType=1 ); /* IE6-9 */
 }
-@media only screen and (max-width: 767px){
-	.enlaces ul{
-        display: flex;
-        flex-direction: column;
-    }
-    .equipos {
-        display: grid; 
-        grid-template-columns: 1fr; 
-        grid-template-rows: repeat(8, 1fr); 
-        grid-template-areas: 
-        "equip1" 
-        "equip2"
-        "equip3" 
-        "equip4"
-        "equip5" 
-        "equip6"
-        "equip7" 
-        "equip8"; 
-    }
+
+.enlaces {
+  padding-top: 25px;
+  text-align: center;
 }
+.enlaces ul {
+  display: flex;
+  justify-content: center;
+}
+.enlaces ul li {
+  padding: 10px;
+  list-style: none;
+}
+.enlaces ul li a {
+  text-decoration: none;
+  color: rgba(229, 229, 229, 0.8);
+  padding: 10px;
+  transition: background-color 0.8s;
+  background-image: url(../assets/topography.svg);
+  border-radius: 10px;
+}
+.enlaces ul li a:hover {
+  color: #ce8209;
+  background-color: rgba(229, 229, 229, 0.5137254902);
+}
+
+/*Flecha para subir*/
+.flecha {
+  width: 55px;
+  box-sizing: content-box;
+  position: fixed;
+  bottom: 0;
+  padding: 15px;
+  filter: brightness(100);
+  -webkit-filter: brightness(100);
+}
+
+.copyright {
+  text-align: center;
+  margin-top: 75px;
+  position: relative;
+  bottom: 5px;
+}
+
+.paddingT {
+  padding-top: 50px;
+}
+
+.paddingLR {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.conteiner {
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.35fr 2fr 0.5fr;
+  grid-template-areas: "navegador" "main" "footer";
+}
+
+@media only screen and (min-width: 1024px) {
+  .navbar-expand-lg .navbar-collapse {
+    justify-content: flex-end;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .enlaces ul {
+    display: flex;
+    flex-direction: column;
+  }
+  .equipos {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(8, 1fr);
+    grid-template-areas: "equip1" "equip2" "equip3" "equip4" "equip5" "equip6" "equip7" "equip8";
+  }
+}/*# sourceMappingURL=style.css.map */

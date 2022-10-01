@@ -18,7 +18,7 @@
                 border-radius: 8px;
                 &:hover{
                     color: $textColorHover;
-                    background-color: #e5e5e583;
+                    @include color-fondo;
                 }
             }
         } 

@@ -1,5 +1,9 @@
-$textColor: #e5e5e583;
+$textColor: #e5e5e5a0;
 $textColorHover: #fca311;
+@mixin color-fondo {
+    background-color: #e5e5e583;
+    font-weight: bold;
+}
 
 *{
     margin: 0;
@@ -7,13 +11,9 @@ $textColorHover: #fca311;
     box-sizing: border-box;
 }
 body{
-    background: hsla(221, 75%, 24%, 1);
-    background: radial-gradient(circle, hsla(221, 75%, 24%, 1) 0%, hsla(221, 51%, 16%, 1) 77%, hsla(221, 75%, 24%, 1) 100%);
-    background: -moz-radial-gradient(circle, hsla(221, 75%, 24%, 1) 0%, hsla(221, 51%, 16%, 1) 77%, hsla(221, 75%, 24%, 1) 100%);
-    background: -webkit-radial-gradient(circle, hsla(221, 75%, 24%, 1) 0%, hsla(221, 51%, 16%, 1) 77%, hsla(221, 75%, 24%, 1) 100%);
-    
-    font-family: 'Source Serif Pro', serif;
-    font-weight: bold;
+    font-family: 'Abel', sans-serif;
+    font-size: x-large;
+    background-color: #000000;
 }
 
 @import "header";

@@ -19,14 +19,14 @@ footer{
             list-style: none;
             a{
                 text-decoration: none;
-                color: #e5e5e5cc;
+                color: $textColor;
                 padding: 10px;
                 transition: background-color .8s;
                 background-image: url(../assets/topography.svg);
                 border-radius: 10px;
                 &:hover{
-                    color: #ce8209;
-                    background-color: #e5e5e583;
+                    color: $textColorHover;
+                    @include color-fondo;
                 }
             }
         }

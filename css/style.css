@@ -5,24 +5,22 @@
 }
 
 body {
-  background: hsl(221deg, 75%, 24%);
-  background: radial-gradient(circle, hsl(221deg, 75%, 24%) 0%, hsl(221deg, 51%, 16%) 77%, hsl(221deg, 75%, 24%) 100%);
-  background: -webkit-radial-gradient(circle, hsl(221deg, 75%, 24%) 0%, hsl(221deg, 51%, 16%) 77%, hsl(221deg, 75%, 24%) 100%);
-  font-family: "Source Serif Pro", serif;
-  font-weight: bold;
+  font-family: "Abel", sans-serif;
+  font-size: x-large;
+  background-color: #000000;
 }
 
 .titulo {
   /*text-align: center;*/
   font-family: "Michroma", sans-serif;
-  color: rgba(229, 229, 229, 0.5137254902);
+  color: rgba(229, 229, 229, 0.6274509804);
   grid-area: titulo;
   text-align: center;
 }
 
 .listaNavegador ul li a {
   text-decoration: none;
-  color: rgba(229, 229, 229, 0.5137254902);
+  color: rgba(229, 229, 229, 0.6274509804);
   list-style: none;
   padding: 10px;
   transition: background-color 0.8s;
@@ -32,6 +30,7 @@ body {
 .listaNavegador ul li a:hover {
   color: #fca311;
   background-color: rgba(229, 229, 229, 0.5137254902);
+  font-weight: bold;
 }
 
 main {
@@ -41,17 +40,17 @@ main {
 .titulo1 {
   text-align: center;
   font-family: "Michroma", sans-serif;
-  color: rgba(229, 229, 229, 0.5137254902);
+  color: rgba(229, 229, 229, 0.6274509804);
   padding: 10px;
 }
 
 .titulo3 {
-  color: rgba(229, 229, 229, 0.5137254902);
+  color: rgba(229, 229, 229, 0.6274509804);
 }
 
 .presentacion {
   padding: 10px;
-  color: rgba(229, 229, 229, 0.5137254902);
+  color: rgba(229, 229, 229, 0.6274509804);
   margin-bottom: 30px;
 }
 
@@ -89,6 +88,7 @@ main {
 .equipos img:hover {
   opacity: 1;
   border: 2px solid white;
+  box-shadow: 7px 5px 5px rgba(246, 227, 203, 0.631372549);
   scale: 1.15;
 }
 
@@ -100,7 +100,7 @@ main {
 }
 .equip1 img {
   opacity: 0.75;
-  box-shadow: 7px 5px 5px black;
+  box-shadow: 7px 1px 10px rgba(119, 119, 119, 0.631372549);
   border-radius: 15px;
 }
 
@@ -112,7 +112,7 @@ main {
 }
 .equip2 img {
   opacity: 0.75;
-  box-shadow: 7px 5px 5px black;
+  box-shadow: 7px 1px 10px rgba(119, 119, 119, 0.631372549);
   border-radius: 15px;
 }
 
@@ -124,7 +124,7 @@ main {
 }
 .equip3 img {
   opacity: 0.75;
-  box-shadow: 7px 5px 5px black;
+  box-shadow: 7px 1px 10px rgba(119, 119, 119, 0.631372549);
   border-radius: 15px;
 }
 
@@ -136,7 +136,7 @@ main {
 }
 .equip4 img {
   opacity: 0.75;
-  box-shadow: 7px 5px 5px black;
+  box-shadow: 7px 1px 10px rgba(119, 119, 119, 0.631372549);
   border-radius: 15px;
 }
 
@@ -148,7 +148,7 @@ main {
 }
 .equip5 img {
   opacity: 0.75;
-  box-shadow: 7px 5px 5px black;
+  box-shadow: 7px 1px 10px rgba(119, 119, 119, 0.631372549);
   border-radius: 15px;
 }
 
@@ -160,7 +160,7 @@ main {
 }
 .equip6 img {
   opacity: 0.75;
-  box-shadow: 7px 5px 5px black;
+  box-shadow: 7px 1px 10px rgba(119, 119, 119, 0.631372549);
   border-radius: 15px;
 }
 
@@ -172,7 +172,7 @@ main {
 }
 .equip7 img {
   opacity: 0.75;
-  box-shadow: 7px 5px 5px black;
+  box-shadow: 7px 1px 10px rgba(119, 119, 119, 0.631372549);
   border-radius: 15px;
 }
 
@@ -184,7 +184,7 @@ main {
 }
 .equip8 img {
   opacity: 0.75;
-  box-shadow: 7px 5px 5px black;
+  box-shadow: 7px 1px 10px rgba(119, 119, 119, 0.631372549);
   border-radius: 15px;
 }
 
@@ -286,15 +286,16 @@ footer {
 }
 .enlaces ul li a {
   text-decoration: none;
-  color: rgba(229, 229, 229, 0.8);
+  color: rgba(229, 229, 229, 0.6274509804);
   padding: 10px;
   transition: background-color 0.8s;
   background-image: url(../assets/topography.svg);
   border-radius: 10px;
 }
 .enlaces ul li a:hover {
-  color: #ce8209;
+  color: #fca311;
   background-color: rgba(229, 229, 229, 0.5137254902);
+  font-weight: bold;
 }
 
 /*Flecha para subir*/

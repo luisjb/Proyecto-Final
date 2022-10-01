@@ -1,0 +1,6 @@
+Lista de cambios:
+- Se agrego las meta etiquetas: description y keywords
+- Se agrego mixin
+- Se adecuaron algunas imagenes
+- Se sacaron los Lorem
+- Se cambio la tipografia por una mas legible y se cambio el background

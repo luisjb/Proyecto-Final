@@ -84,6 +84,7 @@ main {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr;
   grid-template-areas: "equip1 equip2" "equip3 equip4" "equip5 equip6" "equip7 equip8";
+  overflow: hidden;
 }
 .equipos img:hover {
   opacity: 1;

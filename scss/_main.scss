@@ -45,6 +45,7 @@ main{
     "equip3 equip4"
     "equip5 equip6"
     "equip7 equip8"; 
+    overflow: hidden;
     img{
         &:hover{
             opacity: 1;

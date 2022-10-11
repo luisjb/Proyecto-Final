@@ -151,9 +151,8 @@ main{
         display: flex;
         width: 400%;
         padding: 0;
-        animation: movimiento 16s infinite alternate;
+        animation: movimiento 10s infinite alternate;
         animation-timing-function: ease-in;
-        -webkit-animation: movimiento 16s infinite alternate;
         li{
             width: 100%;
             list-style: none;

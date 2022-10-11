@@ -11,7 +11,6 @@ body {
 }
 
 .titulo {
-  /*text-align: center;*/
   font-family: "Michroma", sans-serif;
   color: rgba(229, 229, 229, 0.6274509804);
   grid-area: titulo;
@@ -198,10 +197,10 @@ main {
   display: flex;
   width: 400%;
   padding: 0;
-  animation: movimiento 16s infinite alternate;
+  -webkit-animation: movimiento 10s infinite alternate;
+          animation: movimiento 10s infinite alternate;
   -webkit-animation-timing-function: ease-in;
           animation-timing-function: ease-in;
-  -webkit-animation: movimiento 16s infinite alternate;
 }
 .conteiner-carrusel ul li {
   width: 100%;
@@ -267,7 +266,6 @@ main {
 footer {
   grid-area: footer;
   color: white;
-  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#090e21+1,000000+100 */
   background: #090e21; /* Old browsers */ /* FF3.6-15 */ /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(to right, #090e21 1%, #000000 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#090e21", endColorstr="#000000",GradientType=1 ); /* IE6-9 */
@@ -330,16 +328,20 @@ footer {
   display: grid;
   grid-auto-columns: 1fr;
   grid-template-columns: 1fr;
-  grid-template-rows: 0.35fr 2fr 0.5fr;
+  grid-template-rows: 0.35fr 3fr 0.5fr;
   grid-template-areas: "navegador" "main" "footer";
 }
 
+/*Encargado del responsive*/
 @media only screen and (min-width: 1024px) {
   .navbar-expand-lg .navbar-collapse {
     justify-content: flex-end;
   }
 }
 @media only screen and (max-width: 767px) {
+  body {
+    font-size: large;
+  }
   .enlaces ul {
     display: flex;
     flex-direction: column;

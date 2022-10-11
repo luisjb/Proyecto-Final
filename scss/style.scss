@@ -25,19 +25,22 @@ body{
     display: grid; 
     grid-auto-columns: 1fr; 
     grid-template-columns: 1fr; 
-    grid-template-rows: 0.35fr 2fr 0.5fr;  
+    grid-template-rows: 0.35fr 3fr 0.5fr;  
     grid-template-areas: 
     "navegador"
     "main"
     "footer"
 }
-
+/*Encargado del responsive*/
 @media only screen and (min-width: 1024px){
     .navbar-expand-lg .navbar-collapse{
         justify-content: flex-end;
     }
 }
 @media only screen and (max-width: 767px){
+    body{
+        font-size: large;
+    }
 	.enlaces ul{
         display: flex;
         flex-direction: column;

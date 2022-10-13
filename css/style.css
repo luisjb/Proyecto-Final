@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -78,6 +79,7 @@ main {
   padding-right: 10px;
 }
 
+/*Distribución de los elementos en la pestaña equipamientos*/
 .equipos {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -210,6 +212,7 @@ main {
   width: 100%;
 }
 
+/*Movimiento del carrusel*/
 @-webkit-keyframes movimiento {
   0% {
     margin-left: 0;
@@ -236,7 +239,6 @@ main {
     margin-left: -300%;
   }
 }
-
 @keyframes movimiento {
   0% {
     margin-left: 0;

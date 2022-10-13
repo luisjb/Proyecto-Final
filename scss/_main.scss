@@ -36,6 +36,7 @@ main{
     padding-left: 10px; 
     padding-right: 10px;
 }
+/*Distribución de los elementos en la pestaña equipamientos*/
 .equipos {
     display: grid; 
     grid-template-columns: 1fr 1fr; 
@@ -162,6 +163,7 @@ main{
         }
     }
 }
+/*Movimiento del carrusel*/
 @keyframes movimiento {
     0% {margin-left: 0;}
     20% {margin-left: 0;}  
